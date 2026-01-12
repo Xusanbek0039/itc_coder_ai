@@ -35,6 +35,7 @@ urlpatterns = [
     path('api/v1/courses/', include('courses.urls')),
     path('api/v1/progress/', include('progress.urls')),
     path('api/v1/ai/', include('ai_tutor.urls')),
+    path('api/v1/certificates/', include('certificates.urls')),
 ]
 
 if settings.DEBUG:

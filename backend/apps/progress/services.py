@@ -58,6 +58,9 @@ class ProgressService:
             if total_lessons == completed_count:
                 enrollment.is_completed = True
                 enrollment.save()
-                # TODO: Trigger Certificate Generation here
+                
+                # Trigger Certificate Generation
+                from certificates.services import CertificateService
+                CertificateService.generate_certificate(enrollment.student, enrollment.course)
                 
         return current_progress
