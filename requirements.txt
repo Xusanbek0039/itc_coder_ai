@@ -1,7 +1,0 @@
-django>=5.0
-djangorestframework
-djangorestframework-simplejwt
-python-dotenv
-pillow
-google-generativeai
-openai
